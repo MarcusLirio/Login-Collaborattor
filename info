@@ -1,0 +1,23 @@
+information about genearte options
+nest g --help
+
+Generate new module
+nest g module tasks
+
+Generate controller
+nest g controller tasks
+nest g controller tasks --no-spec  //para no generar con el archivo spec de los tests
+
+Generate service
+nest g service tasks 
+nest g service tasks --no-spec  // no spec file
+
+
+TypeScript
+Syntatic Sugar (Ejemplo del dependency injection en el constructor )
+
+Nest JS
+Pipes can perform data transformation or data validation befor the handler is called
+
+Password
+rainbown table para verificar hash passwords
