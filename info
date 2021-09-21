@@ -21,3 +21,8 @@ Pipes can perform data transformation or data validation befor the handler is ca
 
 Password
 rainbown table para verificar hash passwords
+
+docker run -name nest-prostgres -p 5432:5432 -d postgres -e POSTGRES_PASSWORD=postgres
+
+
+https://www.udemy.com/course/serverless-framework/?referralCode=3BE4411C3364176D6722
