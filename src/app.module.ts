@@ -16,7 +16,12 @@ import { configValidationSchema } from './config.schema';
       imports: [ConfigModule], // what modludes depends on
       inject: [ConfigService], //wath i want to inject
       useFactory: async (configService: ConfigService) => {
+        const isProduction = configService.get('STAGE') === 'prod';
         return {
+          ssl: isProduction,
+          extra: {
+            ssl: isProduction ? { rejectUnauthorized: false } : null,
+          },
           type: 'postgres',
           autoLoadEntities: true,
           synchronize: true,
